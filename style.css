@@ -324,6 +324,95 @@ footer {
   border-top: 1px solid rgba(255,255,255,.08);
 }
 
+.coming-soon {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: rgba(0, 195, 255, 0.15);
+  border: 1px solid rgba(0, 195, 255, 0.4);
+  color: #21cfff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.staff-section {
+  padding: 95px 7%;
+  text-align: center;
+  background: #03070d;
+}
+
+.staff-section h2 {
+  font-size: clamp(34px, 5vw, 58px);
+  margin-bottom: 50px;
+}
+
+.staff-section h2 span {
+  color: #21cfff;
+  text-shadow: 0 0 20px rgba(33, 207, 255, .8);
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 26px;
+}
+
+.staff-card {
+  min-height: 250px;
+  padding: 28px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .035);
+  border: 1px solid rgba(255, 255, 255, .08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .25s;
+}
+
+.staff-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(33, 207, 255, .7);
+  box-shadow: 0 0 35px rgba(33, 207, 255, .15);
+}
+
+.staff-card img,
+.placeholder-avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 3px solid rgba(33, 207, 255, .8);
+  box-shadow: 0 0 25px rgba(33, 207, 255, .25);
+}
+
+.placeholder-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(33,207,255,.35), rgba(3,7,13,.95));
+  color: #21cfff;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.staff-card h3 {
+  color: #21cfff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px rgba(33,207,255,.5);
+}
+
+.staff-card p {
+  color: #b8c7d6;
+  font-size: 14px;
+}
+
 @media (max-width: 850px) {
   .navbar {
     flex-direction: column;
@@ -356,23 +445,5 @@ footer {
 
   .split img {
     width: 190px;
-    .coming-soon {
-    display: inline-block;
-    padding: 6px 14px;
-    margin-bottom: 14px;
-
-    border-radius: 999px;
-
-    background: rgba(0, 195, 255, 0.15);
-    border: 1px solid rgba(0, 195, 255, 0.4);
-
-    color: #21cfff;
-
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-    backdrop-filter: blur(10px);
   }
 }
